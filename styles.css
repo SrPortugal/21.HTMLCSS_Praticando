@@ -1,13 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
+
 :root {
     --branco-principal: #ffffff;
     --cinza-secundario: #C0C0C0;
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
+    /* --font-principal: 'Inter', sans-serif; */
+    /* --font-principal: 'Roboto'; */
+    --font-principal: 'Inter';
 }
 
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 * {
     margin: 0;
@@ -19,7 +28,35 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
 .container {
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__botao {
+    text-decoration: none;
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: var(--branco-principal) 2px solid;
+}
+
+.container__aviso {
+    color: var(--cinza-secundario);
+    font-size: 12px;
 
 }
