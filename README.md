@@ -6,8 +6,15 @@ O projeto do figma esta disponivel na url: https://www.figma.com/file/tFDVyNuKhr
 Na aula 2 criamos o botao azul e o botao transparente
 
 ```HTML
-<a href="www.alura.com.br" class="container__botao">Assine por 12x de R$ 120,00</a>
-<a href="www.alura.com.br" class="container__botao botao_secundario">Assinar somente o Alura+</a>
+    <section class="container principal">
+        <div>
+            <h1 class="container__titulo">Com o Combo+, você pode aproveitar a Alura+ e o Alura Língua por um preço único.</h1>
+            <img src="./img/Combo.png" alt="O Combo+ é a junção do alura+ e o alura lingua">
+            <a href="www.alura.com.br" class="container__botao">Assine por 12x de R$ 120,00</a>
+            <a href="www.alura.com.br" class="container__botao botao_secundario">Assinar somente o Alura+</a>
+            <p class="container__aviso">*O preço pode variar caso a assinatura seja feita em outros planos.</p>
+        </div>
+    </section>
 ```
 
 ```CSS
@@ -23,4 +30,10 @@ Na aula 2 criamos o botao azul e o botao transparente
     background-color: transparent;
     border: var(--branco-principal) 2px solid;
 }
+.container__aviso {
+    color: var(--cinza-secundario);
+    font-size: 12px;
+
+}
 ```
+Criamos os botoes e o texto de Obs
